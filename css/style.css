@@ -1,0 +1,64 @@
+/* GENERAL */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 50px;
+}
+
+img{
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+/* UTILITY */
+.container{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  /* debug */
+  background-color: orange;
+}
+/* /UTILITY */
+
+/* HEADER */
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #ff6900;
+  height: 50px;
+  font-size: 0.8rem;
+}
+
+header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 50px;
+}
+
+header .link-category a{
+  padding-right: 5px;
+}
+
+header .logo img{
+  width: 100px;
+  vertical-align: middle;
+}
+
+header .go-to i{
+  padding-left: 5px;
+}
+/* /HEADER */
