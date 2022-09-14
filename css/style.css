@@ -29,41 +29,8 @@ a:hover{
   max-width: 1300px;
   margin: 0 auto;
 }
-
-.discount{
-  background-color: red;
-  width: 50px;
-}
-
-.eco{
-  background-color: green;
-  width: 100px;
-}
-
-.eco::before{
-  content: "Sostenibilità";
-}
-
-.eco, .discount{
-  height: 30px;
-  text-align: center;
-  line-height: 30px;
-  color: white;
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-
-.heart{
-  background-color: white;
-  text-align: center;
-  font-size: 2.2rem;
-  padding: 5px 15px;
-}
-
-.heart:hover{
-  color: red;
-}
 /* /UTILITY */
+
 
 /* HEADER */
 header{
@@ -74,6 +41,7 @@ header{
   z-index: 999;
   background-color: #ff6900;
   height: 70px;
+  box-shadow: 0 4px 4px -2px gray;
 }
 
 header .container{
@@ -128,31 +96,61 @@ main{
 .row .product:hover .hover-img{
   display: inline;
 }
+.row .product .eco, 
+.row .product .discount{
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
 
-
-.row .product .top-img .discount, .row .product .top-img .eco, .row .product .top-img .heart{
+.row .product .discount, 
+.row .product .eco, 
+.row .product .heart {
   position: absolute;
 } 
 
-.row .product .top-img .discount{
+.row .product .discount {
   left: 0;
   bottom: 45px;
+  background-color: red;
+  width: 50px;
 }
 
-.row .product .top-img .eco:nth-child(2){
-  left: 55px;
-  bottom: 45px;
+.row .product .eco {
+  background-color: green;
+  width: 100px;
 }
 
-.row .product .top-img .eco:nth-child(1){
+.row .product .eco::before{
+  content: "Sostenibilità";
+}
+
+.row .product .eco:nth-child(1){
   left: 0px;
   bottom: 45px;
 }
 
-.row .product .top-img .heart{
+.row .product .eco:nth-child(2){
+  left: 55px;
+  bottom: 45px;
+}
+
+.row .product .heart{
   top: 10px;
   right: 0;
+  background-color: white;
+  text-align: center;
+  font-size: 2.2rem;
+  padding: 5px 15px;
 }
+
+.row .product .heart:hover{
+  color: red;
+}
+
 
 .row .product .bottom-text{
   font-size: 0.9rem;
@@ -163,12 +161,12 @@ main{
   text-transform: uppercase;
 }
 
-.row .product .bottom-text .price .after-discount{
+.row .product .price .after-discount {
   color:red;
   font-weight: 700;
 }
 
-.row .product .bottom-text .price .pre-discount{
+.row .product .price .pre-discount{
   text-decoration: line-through;
 }
 /* /MAIN */
