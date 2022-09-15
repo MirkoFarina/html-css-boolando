@@ -48,7 +48,7 @@ header .container{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  line-height: 70px;
+  height: 100%;
 }
 
 header .link-category a{
@@ -91,6 +91,10 @@ main{
   left: 0;
   top: 0;
   display: none;
+}
+
+.row .product:hover{
+  cursor: pointer;
 }
 
 .row .product:hover .hover-img{
@@ -182,7 +186,7 @@ footer .container{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 100%;
   font-size: 0.9rem;
 }
 
