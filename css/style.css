@@ -49,6 +49,7 @@ header .container{
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  padding: 0 15px;
 }
 
 header .link-category a{
@@ -74,12 +75,12 @@ main{
 .row{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 .row .product{
-  width: calc(100% / 3 - 15px);
+  width: calc(100% / 3 );
   min-width: 355px;
   margin-bottom: 40px;
+  padding: 0 15px;
 }
 
 .row .product .top-img{
@@ -188,6 +189,7 @@ footer .container{
   align-items: center;
   height: 100%;
   font-size: 0.9rem;
+  padding: 0 15px;
 }
 
 footer .container .left h3{
